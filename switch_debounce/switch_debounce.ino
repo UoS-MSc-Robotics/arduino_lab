@@ -94,10 +94,11 @@ void loop() {
     lastDisplay = millis();
 
     // write the counter values to the serial monitor;
+    Serial.print("\r\n");
     Serial.print("Undebounced Counter = ");
     Serial.print(unDebouncedCounter);
     Serial.print(", Debounced Counter = ");
-    Serial.print(debouncedCounter);
+    Serial.print(debouncedCounter - 1);
     Serial.println("        ");
   }
 
