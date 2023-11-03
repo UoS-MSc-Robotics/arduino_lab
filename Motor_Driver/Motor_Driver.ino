@@ -67,15 +67,15 @@ void loop() {
   analogWrite(pinPWM, pwmValue);
 
   // Display the board variable status to the Serial Monitor
-  Serial.print("ADC Measurement: ");
+  Serial.print("ADC Values: ");
   Serial.print(potReading);
-  Serial.print(" PWM Value: ");
+  Serial.print(", PWM Value: ");
   Serial.print(pwmValue);
-  Serial.print(" AI1: ");
+  Serial.print(", AI1: ");
   Serial.print(AI1);
-  Serial.print(" AI2: ");
+  Serial.print(", AI2: ");
   Serial.print(AI2);
-  Serial.print(" Standby: ");
+  Serial.print(", Standby: ");
   Serial.println(standBy);
   Serial.print("\r\n");
 
