@@ -45,10 +45,12 @@ void loop() {
   int servoAngle = map(potAngle, -150, 150, 0, 180);
 
   // print the pot angle and servo angle to the serial monitor
+  int servodebugAngle = map(potAngle, -150, 150, -90, 90);
+
   Serial.print("Potentiometer Angle: ");
-  Serial.print(potAngle);
+  Serial.print(potAngle*-1);
   Serial.print(", Servo Angle: ");
-  Serial.println(servoAngle);
+  Serial.println(servodebugAngle*-1);
   Serial.print("\r\n");
   delay(100);
 
